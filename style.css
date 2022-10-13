@@ -1,0 +1,32 @@
+footer
+{
+    color: gold;
+    padding-top: 1mm;
+    font-weight: bold;
+}
+div.a
+{
+    border : 8px solid white;
+    float: center;
+}
+button:hover
+{
+    background: aqua;
+    cursor: pointer;
+}
+header
+{
+    float: left;
+}
+img
+{
+    width: 30mm;
+    height: 30mm;
+}
+div.b
+{
+ padding-left: 3cm;
+  
+}
+
+    

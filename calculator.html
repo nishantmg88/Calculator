@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nishan Tamang</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+           <style>
+            h1
+            {
+                color: aqua;
+                margin-left: 2cm;
+                font-size: xxx-large;
+                text-decoration: underline;
+            }
+           </style>
+
+           <script>
+            function add()
+            {
+                var a = parseInt(document.getElementById("id1").value);
+                var b = parseInt(document.getElementById("id2").value);
+                var z = a+b;
+                document.getElementById("pl").innerHTML=z;
+            }
+
+            function sub()
+            { 
+                var a = parseInt(document.getElementById("id1").value);
+                var b = parseInt(document.getElementById("id2").value);;
+                var sub1 = a-b;
+                document.getElementById("pl").innerHTML=sub1;
+            }
+
+            function mul()
+            {
+                var a = document.getElementById("id1").value;
+                var b = document.getElementById("id2").value;
+                var x = a*b;
+                document.getElementById("pl").innerHTML=x;
+            }
+
+            function div()
+            {
+                var y;
+                var a = document.getElementById("id1").value;
+                var b = document.getElementById("id2").value;
+                var y = a/b;
+                document.getElementById("pl").innerHTML=y;
+            }
+
+            function per()
+            {
+                var a = document.getElementById("id1").value;
+                var b = document.getElementById("id2").value;
+                var per1= (a+b)/100;
+                document.getElementById("pl").innerHTML=per1;
+            }
+
+           </script>
+           <body background="op.jpg" align="center">
+            <header> <img src="gng.png"> </header>
+            <br><br><br><br>
+            <h1> Nishan's Calculator</h1>
+            <br>
+            
+            <p style=" padding-left: 3cm; font-weight: bold; font-size: xx-large;"> <font style="color: yellow;">Enter 1 <sup>st</sup> Number:</font>&nbsp;
+            <input id="id1" placeholder="Enter Your Number Here" type="text" style="height: 8mm; width: 80mm;"></p>
+            <br>
+        
+            <p style=" padding-left: 3cm; font-weight: bold; font-size: xx-large; font color: white;"><font style="color: yellow;"> Enter 2 <sup>nd</sup> Number:</font>&nbsp;
+            <input id="id2" placeholder="Enter Your Number Here" type="text" style="height: 8mm; width: 80mm;"></p>
+            <br><br>
+             
+            <div class="b">
+            <button style="height: 10mm; width: 30mm;" onclick="add()">ADDITION</button>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-
+            <button style="height: 10mm; width: 30mm;" onclick="sub()">SUBTRACTION</button>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <button style="height: 10mm; width: 35mm;" onclick="mul()">MULTIPLICATION</button>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <button style="height: 10mm; width: 30mm;" onclick="div()">DIVISION</button>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <button style="height: 10mm; width: 30mm;" onclick="per()">PERCENTAGE</button></div>
+            <br>
+            <br>
+
+            <div class="a">
+            <p id="pl" style="font-size: 30px; color: aqua; font-weight: bold;">YOUR ANSWER WILL APPEAR HERE</p>
+            </div>
+
+            <footer>
+                <marquee scrollamount="18">
+                <p> Copyright &copy; 2022 Nishan Tamang</p>
+                </marquee>
+            </footer>
+           </body>
+</html>
